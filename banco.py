@@ -16,6 +16,15 @@ class ContaBancaria:
     
     #Sacar + Descontar valor da conta
     def saque(self, valorRetirar):
-        self.saldo = self.saldo-valorRetirar
+        #verificando se valor do saque é maior que o saldo
+        #se for maior ele nega o saque, do contrario ocorre tudo normalmente.
+        if(valorRetirar<=self.saldo):
+            self.saldo = self.saldo-valorRetirar
+        else:
+            print("Saldo Insuficiente")
+
+    def deposito(self,deposito):
+        self.saldo += deposito
+
         
 
