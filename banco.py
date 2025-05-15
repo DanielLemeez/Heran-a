@@ -26,8 +26,9 @@ class ContaBancaria:
         #se for maior ele nega o saque, do contrario ocorre tudo normalmente.
         if(valorRetirar<=self.saldo):
             self.saldo = self.saldo-valorRetirar
+            return True
         else:
-            print("Saldo Insuficiente")
+            return False
 
     def deposito(self,deposito):
         self.saldo += deposito
