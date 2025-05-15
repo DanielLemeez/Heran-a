@@ -10,9 +10,15 @@ class ContaBancaria:
     def getCpf(self):
         return self.cpf
     
+    def setcCpf(self,cpf):
+        self.cpf=cpf
+    
     #Pegar o saldo
     def getSaldo(self):
         return self.saldo
+    
+    def setSaldo(self):
+        self.saldo = saldo
     
     #Sacar + Descontar valor da conta
     def saque(self, valorRetirar):
