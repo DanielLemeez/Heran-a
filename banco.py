@@ -17,7 +17,7 @@ class ContaBancaria:
     def getSaldo(self):
         return self.saldo
     
-    def setSaldo(self):
+    def setSaldo(self,saldo):
         self.saldo = saldo
     
     #Sacar + Descontar valor da conta
