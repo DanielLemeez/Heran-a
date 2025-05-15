@@ -34,4 +34,6 @@ class ContaBancaria:
         self.saldo += deposito
 
         
-
+########################################
+conta = ContaBancaria('12345678',2000)
+if(contas)
